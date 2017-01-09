@@ -14,6 +14,9 @@
 		3F7810CA1DE3481400E73C9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7810C81DE3481400E73C9D /* LaunchScreen.storyboard */; };
 		3F7810D51DE3481400E73C9D /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7810D41DE3481400E73C9D /* ToDoListTests.swift */; };
 		3F7810E01DE3481400E73C9D /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7810DF1DE3481400E73C9D /* ToDoListUITests.swift */; };
+		3F7810EE1DE34B4600E73C9D /* ListInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7810ED1DE34B4600E73C9D /* ListInfo.swift */; };
+		3F7810F01DE34C3E00E73C9D /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7810EF1DE34C3E00E73C9D /* ItemCollectionViewCell.swift */; };
+		3F9D75E61DEF91A100BAE6DF /* ColorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D75E51DEF91A100BAE6DF /* ColorStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		3F7810DB1DE3481400E73C9D /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7810DF1DE3481400E73C9D /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		3F7810E11DE3481400E73C9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F7810ED1DE34B4600E73C9D /* ListInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInfo.swift; sourceTree = "<group>"; };
+		3F7810EF1DE34C3E00E73C9D /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		3F9D75E51DEF91A100BAE6DF /* ColorStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				3F7810BF1DE3481400E73C9D /* AppDelegate.swift */,
 				3F7810C11DE3481400E73C9D /* ViewController.swift */,
+				3F9D75E51DEF91A100BAE6DF /* ColorStore.swift */,
+				3F7810ED1DE34B4600E73C9D /* ListInfo.swift */,
+				3F7810EF1DE34C3E00E73C9D /* ItemCollectionViewCell.swift */,
 				3F7810C31DE3481400E73C9D /* Main.storyboard */,
 				3F7810C61DE3481400E73C9D /* Assets.xcassets */,
 				3F7810C81DE3481400E73C9D /* LaunchScreen.storyboard */,
@@ -188,7 +197,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Quantum Apple";
 				TargetAttributes = {
 					3F7810BB1DE3481400E73C9D = {
@@ -262,6 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7810EE1DE34B4600E73C9D /* ListInfo.swift in Sources */,
+				3F9D75E61DEF91A100BAE6DF /* ColorStore.swift in Sources */,
+				3F7810F01DE34C3E00E73C9D /* ItemCollectionViewCell.swift in Sources */,
 				3F7810C21DE3481400E73C9D /* ViewController.swift in Sources */,
 				3F7810C01DE3481400E73C9D /* AppDelegate.swift in Sources */,
 			);
@@ -336,6 +348,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -386,6 +399,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -514,6 +528,7 @@
 				3F7810E61DE3481400E73C9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F7810E71DE3481400E73C9D /* Build configuration list for PBXNativeTarget "ToDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +537,7 @@
 				3F7810E91DE3481400E73C9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F7810EA1DE3481400E73C9D /* Build configuration list for PBXNativeTarget "ToDoListUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +546,7 @@
 				3F7810EC1DE3481400E73C9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
